@@ -1,0 +1,268 @@
+/* Universal Styles */
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: Hind Vadodara, sans-serif;
+  color: #4A4A4A;
+}
+
+.flex{
+  display: flex;
+}
+
+.img-container {
+  overflow: hidden;
+}
+
+.img-container img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* Header */
+header{
+  line-height: 32px;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div, header ul{
+  display: flex;
+  align-items: center;
+}
+
+header .desktop{
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+header span{
+  font-size: 1.25rem;
+}
+
+#colmar{
+  font-weight: bold;
+}
+
+#academy{
+  color: #9A9A9A;
+}
+
+header li{
+  margin-left: 16px;
+}
+
+header a{
+  text-decoration: none;
+  color: #4A4A4A;
+}
+
+@media only screen and (min-width:751px) {
+  header .mobile{
+    display: none;
+  }
+}
+
+@media only screen and (max-width:750px){
+  header .desktop{
+    display: none;
+  }
+  header .mobile{
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+/* Body Section */
+/* Banner */
+.banner{
+  background-color: #D8D8D8;
+}
+
+.banner .img-container{
+  width: 60%;
+  margin:32px 24px;
+}
+
+.banner-content{
+  width: 35%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-content h1{
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.banner-content h2{
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+}
+
+.banner-content .button{
+  width: 80%;
+  display: inline-block;
+  font-size: 2rem;
+  padding: 8px;
+  background-color: #4A4A4A;
+  color: white;
+  text-align: center;
+}
+
+.banner-content .button:hover{
+  background-color: #9B9B9B;
+}
+
+@media only screen and (max-width:1157px) {
+  .banner-content h1{
+    font-size: 3.2rem;
+  }
+  .banner-content h2{
+    font-size: 2rem;
+  }
+  .banner-content .button{
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width:928px) {
+  .banner-content h1{
+    font-size: 2.56rem;
+  }
+  .banner-content h2{
+    font-size: 1.6rem;
+  }
+  .banner-content .button{
+    font-size: 1.22rem;
+  }
+}
+
+@media only screen and (max-width: 752px) {
+  .banner{
+    flex-direction: column;
+  }
+  .banner .img-container{
+    width: 100%;
+    margin: 0px;
+  }
+  .banner-content{
+    width: calc(100% - 32px);
+    padding: 32px 16px;
+  }
+  .banner-content .button{
+    width: 100%;
+    align-self: flex-start;
+    margin-bottom: 0;
+  }
+}
+
+/* Campus Info */
+.campus-left{
+  width: 60%;
+  margin: 32px 24px;
+  flex-direction: column;
+}
+
+.campus-left img{
+  margin-bottom: 32px;
+}
+
+.campus-left p:nth-child(2){
+  font-size: 4.2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.campus-left p:nth-child(3){
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.campus-left p:nth-child(4){
+  font-family: Helvetica;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 32px 0px;
+}
+
+.campus-right{
+  width: 40%;
+  border-left: 1px solid #E0E2E2;
+  flex-direction: column;
+}
+
+.campus-news{
+  padding: 16px;
+  border-top: 1px solid #E0E2E2;
+  border-bottom: 1px solid #E0E2E2;
+  margin-bottom: 1px;
+}
+
+.campus-news:hover{
+  background-color: #D8D8D8;
+}
+
+.campus-news img{
+  width: 35%;
+  height: auto;
+  margin-right: 32px;
+}
+
+.campus-news .flex{
+  width: 65%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.campus-news .flex p:nth-child(1){
+  font-size: 2.7rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.campus-news .flex p:nth-child(2){
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.campus-news .flex p:nth-child(3){
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.campus-news .flex a{
+  text-decoration: none;
+  color: #2496DE;
+}
+
+@media only screen and (max-width: 1137px) {
+  #campus .desktop{
+    display: none;
+  }
+
+  .campus-right, .campus-news{
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .campus-right .mobile{
+    width: 95%;
+    margin:16px;
+
+  }
+
+}
+
+@media only screen and (min-width: 1138px) {
+  #campus .mobile{
+    display: none;
+  }
+}
